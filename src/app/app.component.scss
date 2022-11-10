@@ -1,0 +1,38 @@
+/**ion-tab-bar {
+    --background: #fff !important;
+    --color: green;
+}*/
+ion-tabs .bg-white {
+    --background: white;
+    --ion-color-base: white !important;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    --color: #afbbce;
+  
+    ion-label {
+      color: black;
+      font-weight: bold;
+    }
+  }
+  
+  ion-tabs .bg-transparent {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    --color: #afbbce;
+  
+    ion-label {
+      color: white;
+      font-weight: bold;
+    }
+  }
+  ion-badge {
+    --background:red;
+    --color: white;
+    --padding-end: 20px;
+    --padding-start: 20px;
+  }
+  

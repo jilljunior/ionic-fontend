@@ -1,0 +1,14 @@
+<div class="actions" *ngIf="video">
+  <div class="child-action">
+    <ion-icon class="like__video" size="large" name="heart" (click)="like(video.title)"></ion-icon>
+    <p >{{video.number_likes}}</p>
+  </div>
+  <div class="child-action">
+    <ion-icon size="large" src="../assets/svg/comment.svg"></ion-icon>
+    <p  >{{video.number_comments}}</p>
+  </div>
+  <div class="child-action">
+    <ion-icon size="large" src="../assets/svg/share.svg"></ion-icon>
+    <p >{{video.number_shares}}</p>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<ion-header class="ion-no-border ion-text-center">
+  <ion-toolbar>
+    <ng-template #chargement>
+      <ion-progress-bar type="indeterminate"></ion-progress-bar>
+    </ng-template>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen>
+  <ion-slides #slide [options]="slideOpts" *ngIf="videoList" (ionSlideNextStart)="puReadVideoList()" (ionSlidePrevStart)="popReadVideoList()" (ionSlideTouchEnd)="playingAndStop()">
+    <ion-slide *ngFor="let video of videoList">
+      <video [autoplay]="false" loop playsinline src={{video.link}}  [muted]="true"></video>
+      <app-feed></app-feed>
+      <app-footer class="footer"></app-footer>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

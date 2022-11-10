@@ -1,0 +1,7 @@
+{
+  "name": "t-ONE",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

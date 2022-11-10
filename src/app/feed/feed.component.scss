@@ -1,0 +1,54 @@
+.actions {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .child-action{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ion-icon {
+    color: white;
+    height: 40px;
+    width: 50px;
+  }
+  
+  p {
+    display: block;
+    color: white;
+    margin-top: 0px;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: normal;
+  }
+  .like__video{
+    color: red;
+    // transform:scale(1.5) rotate(360deg);
+    transition: transform 1s;
+    
+  }
+  
+  .animation_like {
+    animation-name: like_animation;
+    animation-duration: .4s;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: forwards;
+  }
+  
+  
+  @keyframes like_animation {
+    from {
+      transform: scale(1,1);
+      opacity: 1;
+    }
+    to {
+      transform: scale(2, 2);
+      opacity: 0;
+    }
+  }
+  

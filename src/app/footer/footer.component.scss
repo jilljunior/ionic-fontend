@@ -1,0 +1,43 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+.sound-profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sound{
+    display: flex;
+    align-items: center;
+}
+.profile-item{
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+}
+.description p{
+    height: 1em;
+    overflow: hidden;
+    width: 80%;
+}
+.button-follow{
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.70);
+    border-radius: 2px;
+    font-size: 1em;
+    padding: 1px 5px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    
+}
+.user-name{
+    padding: 10px;
+}
+.profile-item1{
+    border-radius: 30px;
+}
